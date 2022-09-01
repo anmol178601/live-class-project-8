@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: #3E4794;
+    position: relative;
+}
+.main-div{
+    background: url(../images/backcover.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.main-div nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img{
+    height: 40px;
+    width: auto;
+}
+
+.nav-items .nav-item{
+    display: inline-block;
+    margin: 40px 20px;
+    cursor: pointer;
+}
+
+.signin-btn{
+    color: #fff;
+    border: none;
+    padding: 4px 15px;
+    border-radius: 30px;
+    background: linear-gradient(to right,#8e4df6,#fe7ad7)
+}
+
+/* Hero Section */
+.intro-section{
+    display: flex;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: flex-start;
+    padding-left: 145px;
+}
+
+.left-section h1{
+    font-size: 70px;
+    margin: 75px 0 45px 0;
+}
+
+.left-section h4{
+    font-weight: 100;
+    font-size: 15px;
+    width: 60%;
+    margin: 0 0 45px 0;
+}
+
+.learn-more-btn{
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    background: linear-gradient(to right,#8e4df6,#fe7ad7);
+    margin-right: 0 auto;
+}
+
+.imgs-div{
+    display: flex;
+}
+
+.vector-img{
+    position: absolute;
+    align-self: flex-end;
+    bottom: 0px;
+}
+
+.vector-dot{
+    position: absolute;
+    align-self: flex-end;
+    bottom: 80px;
+    margin-left: 50px;
+}
+
+.bg-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 720px) {
+    
+    .nav-items .nav-item {
+        margin: 10px 8px;
+    }
+
+    .intro-section{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .left-section{
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+        margin-bottom: 30px;
+    }
+
+    .img-con{
+        width: 80%;
+    }
+
+    .imgs-div{
+        flex-basis: 50%;
+        justify-content: center;
+        
+    }
+
+    .left-section h1 {
+        font-size: 50px;
+    }
+
+    .vector-img{
+        bottom: 0px;
+        left: 70px;
+    }
+    
+    .vector-dot{
+        bottom: 80px;
+        left: 70px;
+    }
+
+    .main-div{
+        background-size: cover;
+    }
+
+}
